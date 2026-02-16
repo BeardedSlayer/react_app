@@ -1,38 +1,241 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 37px 0 38px 0;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-a {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #BBBBBB;
+    text-decoration: none;
+}
+
+.red-circle {
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    top: -10%;
+    right: -30%;
+}
+
+.shop {
+    position: relative;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    border-bottom: 2px solid #5F413C;
 }
 
-.App-link {
-  color: #61dafb;
+.left-h {
+    width: 643px;
+    height: 128px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 64px;
+    color: #FFFFFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-p {
+    width: 673px;
+    height: 84px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #BBBBBB;
+    margin: 30px 0;
+}
+
+.buttons {
+    display: flex;
+    gap: 47px;
+}
+
+.button-wrapper {
+    display: inline-block;
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    border-image: linear-gradient(90deg, #5F413C, #B7988F) 1;
+}
+
+.button {
+    font-family: "Roboto Medium", sans-serif;
+    cursor: pointer;
+    color: #5F413C;
+    border-radius: 30px;
+    position: relative;
+    border: none;
+    background: black;
+    padding: 16px 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.btn-wrap-first {
+    background: none !important;
+}
+
+.first-button {
+    padding: 20px;
+    width: 162px;
+    height: 61px;
+    background: #5F413C;
+    color: white;
+}
+
+.left-content {
+    margin-top: 101px;
+    z-index: 2;
+}
+
+.second-button {
+    padding: 20px 16px;
+    width: 162px;
+    height: 61px;
+}
+
+.btn-wrap {
+    display: inline-block;
+    padding: 2px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #5F413C, #B7988F);
+}
+
+.first-container {
+    display: flex;
+    margin-top: 120px;
+    position: relative;
+    margin-bottom: 120px;
+}
+
+.heart {
+    position: absolute;
+    top: -35%;
+    right: -15%;
+}
+
+.heart img {
+    width: 760px;
+    height: 750px;
+}
+
+.first-section {
+    overflow: hidden;
+}
+
+.second-sec-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-h {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #FFFFFF;
+    max-width: 825px;
+}
+
+.second-p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #BBBBBB;
+    max-width: 825px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.numbers {
+    font-family: 'Roboto Medium', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #5F413C;
+    border: 2px solid #5F413C;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50px;
+}
+
+.adv {
+    font-family: 'Roboto medium', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.title {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.adv-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 130px;
+}
+
+.advantages {
+    display: flex;
+    gap: 45px;
+}
+
+.coffee-cup-img img {
+    width: 588px;
+    height: 450px;
 }
