@@ -53,6 +53,70 @@
 
 .shop {
     position: relative;
+    cursor: pointer;
+}
+
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    max-width: 100%;
+    height: 100vh;
+    background: #5F413C;;
+    box-shadow: -4px 0 20px rgba(0,0,0,0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    padding: 10px;
+}
+
+.cart-item {
+    background: #5F413C;
+}
+
+.cart-list {
+    background: #5F413C;
+}
+
+.title-title {
+    background: #64514d;
+    border-radius: 30px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.price-title {
+    background: #64514d;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.cart-sidebar_open {
+    transform: translateX(0);
+}
+
+.cart-sidebar h2 {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 14px;
+    color: #BBBBBB;
+    background: #5F413C;
+    margin: 10px 0 30px 10px;
+}
+
+.cart-list p {
+    background: #5F413C;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 14px;
+    color: #BBBBBB;
+    text-align: center;
 }
 
 .App-header {
@@ -394,7 +458,7 @@
     color: black;
 }
 
-.bottom-title h2 {
+.form-title h2 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -403,4 +467,92 @@
     color: #FFFFFF;
     text-align: center;
     margin-top: 120px;
+}
+
+.form-title p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #BBBBBB;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 306px;
+    margin: 0 auto;
+}
+
+.input {
+    border: 2px solid #5F413C;
+    border-radius: 30px;
+    text-align: center;
+    padding: 30px 0;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #BBBBBB;
+}
+
+.form-button {
+    height: 80px;
+}
+
+.coffee-pic1 {
+    border: 2px solid #5F413C;
+    border-radius: 50%;
+    width: 310px;
+    height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 30%;
+    left: 0;
+}
+
+.coffee-pic2 {
+    border: 2px solid #5F413C;
+    border-radius: 50%;
+    width: 360px;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: -5%;
+}
+
+.form-container {
+    position: relative;
+}
+
+.footer {
+    border-top: 2px solid #5F413C;
+    margin-top: 120px;
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+    align-items: center;
+}
+
+.footer-box span {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #BBBBBB;
 }
